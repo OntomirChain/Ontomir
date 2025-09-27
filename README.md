@@ -70,9 +70,9 @@ Or check out the latest [release](https://github.com/evmos/evmos/releases).
 
 The following chat channels and forums are great spots to ask questions about Evmos:
 
-- [Evmos X (Twitter)](https://x.com/EvmosOrg)
+- [Ontonmir X (Twitter)](https://x.com/ontomir_chain)
 - [Evmos Discord](https://discord.gg/evmos)
-- [Evmos Forum](https://commonwealth.im/evmos)
+- [Ontomir official website](https://ontomir.network/)
 
 ## Contributing
 
