@@ -68,7 +68,7 @@ Or check out the latest [release](https://github.com/evmos/evmos/releases).
 
 ## Community
 
-The following chat channels and forums are great spots to ask questions about Evmos:
+The following chat channels and forums are great spots to ask questions about Ontomir:
 
 - [Ontonmir X (Twitter)](https://x.com/ontomir_chain)
 - [Ontomir telegram](https://t.me/ontomirchain)
