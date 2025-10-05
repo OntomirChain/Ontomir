@@ -1,66 +1,65 @@
-# Evmos Contributor Guidelines
+# Ontomir Contributor Guidelines
 
 <!-- markdown-link-check-disable -->
-- [Evmos Contributor Guidelines](#evmos-contributor-guidelines)
-    - [General Procedure](#general-procedure)
-    - [Architecture Decision Records (ADR)](#architecture-decision-records-adr)
-    - [Forking](#forking)
-    - [Dependencies](#dependencies)
-    - [Protobuf](#protobuf)
-    - [Development Procedure](#development-procedure)
-    - [Testing](#testing)
-    - [Updating Documentation](#updating-documentation)
-    - [Branching Model and Release](#branching-model-and-release)
-        - [Commit messages](#commit-messages)
-        - [PR Targeting](#pr-targeting)
-        - [Pull Requests](#pull-requests)
-        - [Process for reviewing PRs](#process-for-reviewing-prs)
-        - [Pull Merge Procedure](#pull-merge-procedure)
-        - [Release Procedure](#release-procedure)
-<!-- markdown-link-check-enable -->
+
+- [Ontomir Contributor Guidelines](#Ontomir-contributor-guidelines)
+  - [General Procedure](#general-procedure)
+  - [Architecture Decision Records (ADR)](#architecture-decision-records-adr)
+  - [Forking](#forking)
+  - [Dependencies](#dependencies)
+  - [Protobuf](#protobuf)
+  - [Development Procedure](#development-procedure)
+  - [Testing](#testing)
+  - [Updating Documentation](#updating-documentation)
+  - [Branching Model and Release](#branching-model-and-release)
+    - [Commit messages](#commit-messages)
+    - [PR Targeting](#pr-targeting)
+    - [Pull Requests](#pull-requests)
+    - [Process for reviewing PRs](#process-for-reviewing-prs)
+    - [Pull Merge Procedure](#pull-merge-procedure)
+    - [Release Procedure](#release-procedure)
+      
+      <!-- markdown-link-check-enable -->
 
 ## <span id="general_procedure">General Procedure</span>
 
-Thank you for considering making contributions to Evmos and related repositories!
+Thank you for considering making contributions to Ontomir and related repositories!
 
-Evmos uses [Tendermint’s coding repo](https://github.com/tendermint/coding)
+Ontomir uses [Tendermint’s coding repo](https://github.com/tendermint/coding)
 for overall information on repository workflow and standards.
 
 Contributing to this repo can mean many things such as participating in discussion or proposing code changes.
 To ensure a smooth workflow for all contributors,
 the following general procedure for contributing has been established:
 
-1. Either [open](https://github.com/evmos/evmos/issues/new/choose)
-   or [find](https://github.com/evmos/evmos/issues) an issue you have identified and would like to contribute to
-   resolving.
-2. Participate in thoughtful discussion on that issue.
-3. If you would like to contribute:
-    1. If the issue is a proposal, ensure that the proposal has been accepted by the Evmos team.
-    2. Ensure that nobody else has already begun working on the same issue. If someone already has, please make sure to
-       contact the individual to collaborate.
-    3. If nobody has been assigned the issue and you would like to work on it,
-       make a comment on the issue to inform the
-       community of your intentions to begin work.
-       Ideally, wait for confirmation that no one has started it.
-       However, if you are eager and do not get a prompt response, feel free to dive on in!
-    4. Follow standard Github best practices:
-        1. Fork the repo
-        2. Branch from the HEAD of `development`(For core developers working within the evmos repo, to ensure a
-           clear ownership of branches, branches must be named with the convention `{moniker}/{issue#}-branch-name`).
-        3. Make commits
-        4. Submit a PR to `development`
-    5. Be sure to submit the PR in `Draft` mode.
-       Submit your PR early, even if it's incomplete as this indicates to the community you're working on something
-       and allows them to provide comments early in the development process.
-    6. When the code is complete it can be marked `Ready for Review`.
-    7. Be sure to include a relevant change log entry in the `Unreleased` section of `CHANGELOG.md`
-       (see file for log format).
-    8. Please make sure to run `make format` before every commit -
-       the easiest way to do this is having your editor run it for you upon saving a file.
-       Additionally, please ensure that your code is lint compliant by running `make lint`.
-       There are CI tests built into the Evmos repository
-       and all PR’s will require that these tests pass
-       before they can be merged.
+1. Participate in thoughtful discussion on that issue.
+2. If you would like to contribute:
+   1. If the issue is a proposal, ensure that the proposal has been accepted by the Ontomir team.
+   2. Ensure that nobody else has already begun working on the same issue. If someone already has, please make sure to
+      contact the individual to collaborate.
+   3. If nobody has been assigned the issue and you would like to work on it,
+      make a comment on the issue to inform the
+      community of your intentions to begin work.
+      Ideally, wait for confirmation that no one has started it.
+      However, if you are eager and do not get a prompt response, feel free to dive on in!
+   4. Follow standard Github best practices:
+      1. Fork the repo
+      2. Branch from the HEAD of `development`(For core developers working within the Ontomir repo, to ensure a
+         clear ownership of branches, branches must be named with the convention `{moniker}/{issue#}-branch-name`).
+      3. Make commits
+      4. Submit a PR to `development`
+   5. Be sure to submit the PR in `Draft` mode.
+      Submit your PR early, even if it's incomplete as this indicates to the community you're working on something
+      and allows them to provide comments early in the development process.
+   6. When the code is complete it can be marked `Ready for Review`.
+   7. Be sure to include a relevant change log entry in the `Unreleased` section of `CHANGELOG.md`
+      (see file for log format).
+   8. Please make sure to run `make format` before every commit -
+      the easiest way to do this is having your editor run it for you upon saving a file.
+      Additionally, please ensure that your code is lint compliant by running `make lint`.
+      There are CI tests built into the Ontomir repository
+      and all PR’s will require that these tests pass
+      before they can be merged.
 
 **Note**: for very small or blatantly obvious problems (such as typos),
 it is not required to open an issue to submit a PR.
@@ -68,12 +67,12 @@ For more complex problems/features, if a PR is opened
 before an adequate design discussion has taken place in a GitHub issue,
 that PR runs a high likelihood of being rejected.
 
-Looking for a good place to start contributing?
-Check out our [good first issues](https://github.com/evmos/evmos/issues?q=label%3A%22good+first+issue%22).
+
+
 
 ## <span id="adr">Architecture Decision Records (ADR)</span>
 
-When proposing an architecture decision for Evmos,
+When proposing an architecture decision for Ontomir,
 please create an ADR
 so further discussions can be made.
 We are following this process so all involved parties are in agreement
@@ -84,21 +83,21 @@ refer to [Tendermint ADRs](https://github.com/tendermint/tendermint/tree/master/
 ## <span id="forking">Forking</span>
 
 Please note that Go requires code to live under absolute paths, which complicates forking.
-While my fork lives at `https://github.com/evmos/evmos`,
-the code should never exist at `$GOPATH/src/github.com/evmos/evmos`.
-Instead, we use `git remote` to add the fork as a new remote for the original repo,`$GOPATH/src/github.com/evmos/evmos`,
+While my fork lives at `https://github.com/Ontomir/Ontomir`,
+the code should never exist at `$GOPATH/src/github.com/Ontomir/Ontomir`.
+Instead, we use `git remote` to add the fork as a new remote for the original repo,`$GOPATH/src/github.com/Ontomir/Ontomir`,
 and do all the work there.
 
 For instance, to create a fork and work on a branch of it, you would:
 
 1. Create the fork on github, using the fork button.
-2. Go to the original repo checked out locally. (i.e. `$GOPATH/src/github.com/evmos/evmos`)
+2. Go to the original repo checked out locally. (i.e. `$GOPATH/src/github.com/Ontomir/Ontomir`)
 3. `git remote rename origin upstream`
-4. `git remote add origin git@github.com:tharsis/evmos.git`
+4. `git remote add origin git@github.com:tharsis/Ontomir.git`
 
-Now `origin` refers to my fork and `upstream` refers to the evmos version.
+Now `origin` refers to my fork and `upstream` refers to the Ontomir version.
 So I can `git push -u origin master` to update my fork,
-and make pull requests to evmos from there.
+and make pull requests to Ontomir from there.
 Of course, replace `tharsis` with your git handle.
 
 To pull in updates from the origin repo, run:
@@ -144,7 +143,7 @@ on `go mod tidy -v`.
 ## <span id="protobuf">Protobuf</span>
 
 We use [Protocol Buffers](https://developers.google.com/protocol-buffers) along
-with [gogoproto](https://github.com/cosmos/protobuf) to generate code for use in Evmos.
+with [gogoproto](https://github.com/cosmos/protobuf) to generate code for use in Ontomir.
 
 For deterministic behavior around Protobuf tooling, everything is containerized using Docker. Make sure to have Docker
 installed on your machine, or head to [Docker's website](https://docs.docker.com/get-docker/) to install it.
@@ -180,17 +179,17 @@ For example, in vscode your `.vscode/settings.json` should look like:
 2. `development` must never
    fail `make lint, make test, make test-race, make test-rpc, make test-import`
 3. No `--force` onto `development` (except when reverting a broken commit, which should seldom happen).
-4. Create your feature branch from `development` either on `github.com/evmos/evmos`, or your fork (
+4. Create your feature branch from `development` either on `github.com/Ontomir/Ontomir`, or your fork (
    using `git remote add origin`).
 5. Before submitting a pull request, begin `git rebase` on top of `development`.
 
 ## <span id="testing">Testing</span>
 
-Evmos uses [GitHub Actions](https://github.com/features/actions) for automated testing.
+Ontomir uses [GitHub Actions](https://github.com/features/actions) for automated testing.
 
 ## <span id="updating_doc">Updating Documentation</span>
 
-If you open a PR on the Evmos repo, it is mandatory to update the relevant documentation in `/docs`. Please refer to
+If you open a PR on the Ontomir repo, it is mandatory to update the relevant documentation in `/docs`. Please refer to
 the docs subdirectory and make changes accordingly. Prior to approval, the Code owners/approvers may request some
 updates to specific docs.
 
@@ -200,7 +199,7 @@ User-facing repos should adhere to the [trunk based development branching model]
 
 Libraries need not follow the model strictly, but would be wise to.
 
-Evmos utilizes [semantic versioning](https://semver.org/).
+Ontomir utilizes [semantic versioning](https://semver.org/).
 
 ### <span id="commit_messages">Commit messages</span>
 
@@ -235,12 +234,12 @@ All PRs require two Reviews before merge. When reviewing PRs, please use the fol
    documentation/spec is updated in the right places,
    you have pulled down and tested the code locally.
    In addition:
-    * You must think through whether any added code could be partially combined (DRYed) with existing code.
-    * You must think through any potential security issues or incentive-compatibility flaws introduced by the changes.
-    * Naming convention must be consistent with the rest of the codebase.
-    * Code must live in a reasonable location, considering dependency structures
-      (e.g. not importing testing modules in production code, or including example code modules in production code).
-    * If you approve of the PR, you are responsible for fixing any of the issues mentioned here.
+   * You must think through whether any added code could be partially combined (DRYed) with existing code.
+   * You must think through any potential security issues or incentive-compatibility flaws introduced by the changes.
+   * Naming convention must be consistent with the rest of the codebase.
+   * Code must live in a reasonable location, considering dependency structures
+     (e.g. not importing testing modules in production code, or including example code modules in production code).
+   * If you approve of the PR, you are responsible for fixing any of the issues mentioned here.
 3. If you are only making "surface level" reviews, submit any notes as `Comments` without adding a review.
 
 ### <span id="pull_merge_procedure">Pull Merge Procedure</span>
@@ -267,5 +266,5 @@ All PRs require two Reviews before merge. When reviewing PRs, please use the fol
 8. Tag the release (use `git tag -a`) and create a release in Github.
 9. Delete the `RC` branches.
 
-**Note**: tharsis’s Evmos team currently cuts releases on a need to have basis.
+**Note**: tharsis’s Ontomir team currently cuts releases on a need to have basis.
 We will announce a more standardized release schedule as we near production readiness.
