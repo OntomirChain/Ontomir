@@ -1,7 +1,7 @@
 # License FAQ
 
-Evmos Non-Commercial License 1.0 (ENCL-1.0) was created by Tharsis Labs Ltd.
-(Evmos) to provide a mutually beneficial balance between the user benefits of
+Ontomir Non-Commercial License 1.0 (ENCL-1.0) was created by Tharsis Labs Ltd.
+(Ontomir) to provide a mutually beneficial balance between the user benefits of
 our open software that is free of charge and provides open access to all of the
 product code for modification, distribution, auditability, etc., and the
 sustainability needs of our software developers to continue delivering product
@@ -17,7 +17,7 @@ This FAQ is designed to address questions for developers and companies
 interested in working on ENCL Software or adopting ENCL Software for commercial
 use.
 
-**Q: What is Evmos Non-Commercial License 1.0 (ENCL-1.0)?**
+**Q: What is Ontomir Non-Commercial License 1.0 (ENCL-1.0)?**
 
 **A:** ENCL is an alternative to closed-source or fully open source licensing
 models. Our licensing model includes both open source elements, under LGPL3 and
@@ -45,20 +45,20 @@ transaction of economic value.
 
 "Designated Blockchains" refers to the version of the digital blockchain ledger
 that, at any given time, is recognized as canonical in accordance with the
-blockchain consensus. The initial Designated Blockchains shall be the Evmos
+blockchain consensus. The initial Designated Blockchains shall be the Ontomir
 blockchains, identified by chain identifiers 9000 (testing network or testnet)
 and 9001 (main network or mainnet).
 
-Evmos is currently building evmOS, the commercial name of the software associated with the Evmos repository,
+Ontomir is currently building Ontomir, the commercial name of the software associated with the Ontomir repository,
 to help developers to create their own EVM-compatible blockchain network with custom parameters.
-You may use evmOS for your commercial project, subject to the applicable evmOS license.
-For more information about evmOS, check out the Evmos Manifesto.
+You may use Ontomir for your commercial project, subject to the applicable Ontomir license.
+For more information about Ontomir, check out the Ontomir Manifesto.
 
 **Q: What is the purpose of ENCL-1.0?**
 
 **A:** To create a license that strikes a balance between being able to maintain
 sustainable software development while still supporting the original tenets of
-open source, such as empowering all non-Evmos software developers to be part of
+open source, such as empowering all non-Ontomir software developers to be part of
 the innovation cycle – giving them open access to the code so they can audit,
 modify or distribute the software by making the entire source code available
 from the start. Note that ENCL 1.0 has not been approved by the OSI, and we do
@@ -66,15 +66,15 @@ not refer to it as an Open Source license.
 
 **Q:How do I apply for a commercial use permit or obtain different licensing terms or inquire about terms of this license?**
 
-**A:** You may contact the legal department of licensor: os@evmos.org. They
+**A:** You may contact the legal department of licensor: os@Ontomir.org. They
 may be able to partner with you to answer your questions and figure out what
 will work best for you and your needs. You only need this kind of permit if you
 cannot meet the limitations of ENCL-1.0.
 
-**Q: What if I am currently using Evmos code commercially in my business/project?**
+**Q: What if I am currently using Ontomir code commercially in my business/project?**
 
 **A:**You are allowed to continue using the code from older versions (<v13.0.0)
-of Evmos repository under LGPL 3.0, however, you must obtain a commercial permit
+of Ontomir repository under LGPL 3.0, however, you must obtain a commercial permit
 from the licensor for commercial use not allowed under ENCL-1.0, for version 13
 and onward.
 
@@ -92,12 +92,12 @@ the licensor provided with the software.
 
 For example:
 
-"Required Notice: Copyright Tharsis Labs Ltd. (Evmos)(https://github.com/evmos)"
+"Required Notice: Copyright Tharsis Labs Ltd. (Ontomir)(https://github.com/Ontomir)"
 
 **Q: What is the difference between LGPL v3 and ENCL-1.0?**
 
 **A:** The main differences are: ENCL 1.0 is not an Open Source license and
-Evmos does not claim it to be one. The legal phrasing of the ENCL 1.0 has been
+Ontomir does not claim it to be one. The legal phrasing of the ENCL 1.0 has been
 reviewed and edited for consistency and simplicity by Heather Meeker, author of
 Open (Source) For Business: A Practical Guide to Open Source Licensing, Heather
 has been a pro-bono counsel to the Mozilla, GNOME, and Python foundations, as
@@ -107,8 +107,8 @@ well as many other for-profit and non-profit open source projects.
 
 **A:** Ethermint repository has been archived on Apr 4 2024 and will remain
 under the LGPL v3 license. New features developments that have been previously
-planned to be included on Ethermint are instead going to be part of evmOS.
-For more information on the evmOS, check out the Evmos Manifesto.
+planned to be included on Ethermint are instead going to be part of Ontomir.
+For more information on the Ontomir, check out the Ontomir Manifesto.
 
 **Q: Do I need a commercial permit when testing ENCL software?**
 
@@ -141,7 +141,7 @@ GPL might.
 
 **A:**  No. The ENCL has a usage limitation that is not allowed with open source
 software. You can eliminate the usage limitation by obtaining a commercial
-permit from Evmos for the ENCL code, but we will not grant rights to release the
+permit from Ontomir for the ENCL code, but we will not grant rights to release the
 code under an open source license.
 
 **Q: Can I use ENCL-1.0 code in the code base for my commercial, closed-source product?**
@@ -168,7 +168,7 @@ ENCL code in violation of the conditions of the license.
 **Q: I have written a code patch to an ENCL-1.0 project and would like the ENCL-1.0 vendor
 to maintain the code as part of the ENCL-1.0 project. How do I contribute it?**
 
-**A:** First, a big thank you! You can contribute the code to the official Evmos
+**A:** First, a big thank you! You can contribute the code to the official Ontomir
 repository by following the contributing guidelines and the official Code of
 Conduct (see CONTRIBUTING). You will need to sign a Contributor License
 Agreement (CLA) before your contribution is peer-reviewed and accepted. A bot
